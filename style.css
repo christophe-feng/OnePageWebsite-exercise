@@ -1,0 +1,62 @@
+:root {
+    --primary-color: #ffc107;
+    /* Bootstrap Warning Color */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* 平滑滾動 */
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* 導航欄樣式 */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 區塊間距 */
+section {
+    padding: 80px 0;
+}
+
+/* 輪播圖圖片統一高度與比例 */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    /* 避免圖片變形 */
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+/* 影片容器優化 */
+.video-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* 下載按鈕動畫 */
+.download-btn img {
+    transition: transform 0.3s ease;
+    max-width: 200px;
+}
+
+.download-btn img:hover {
+    transform: translateY(-5px);
+}
+
+/* 頁尾 */
+footer {
+    background: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
